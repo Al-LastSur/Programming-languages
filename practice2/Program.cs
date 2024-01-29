@@ -31,4 +31,32 @@
 // }
 
 
-Task 3. 
+// // Task 3. Input two numbers and identify if the first number can be devisible by the factor of the second number
+// Console.Write("Введите первое число: "); 
+// int numberOne = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите второе число: "); 
+// int numberTwo = Convert.ToInt32(Console.ReadLine());
+// if (numberOne % numberTwo == 0)
+// {
+//     Console.Write($"{numberOne} кратно {numberTwo}");
+// }
+// else
+// {
+//     Console.Write($"{numberOne} не кратно {numberTwo}");
+// }
+
+
+// // Task 4. Identify the thrid-digit from the end or inform if there is none
+Console.Write("Введите число: "); 
+int number = Convert.ToInt32(Console.ReadLine());
+if (number >= 100)
+    {
+     int result = number / 100 % 10;
+    Console.Write($"Третий разряд {number} является {result}");      
+    }
+else
+    {
+    Console.Write($"Третьего разряда в {number} нет");
+    }
+
+
