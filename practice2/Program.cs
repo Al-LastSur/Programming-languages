@@ -47,16 +47,16 @@
 
 
 // // Task 4. Identify the thrid-digit from the end or inform if there is none
-Console.Write("Введите число: "); 
-int number = Convert.ToInt32(Console.ReadLine());
-if (number >= 100)
-    {
-     int result = number / 100 % 10;
-    Console.Write($"Третий разряд {number} является {result}");      
-    }
-else
-    {
-    Console.Write($"Третьего разряда в {number} нет");
-    }
+// Console.Write("Введите число: "); 
+// int number = Convert.ToInt32(Console.ReadLine());
+// if (number >= 100)
+//     {
+//      int result = number / 100 % 10;
+//     Console.Write($"Третий разряд {number} является {result}");      
+//     }
+// else
+//     {
+//     Console.Write($"Третьего разряда в {number} нет");
+//     }
 
 
