@@ -29,12 +29,11 @@
 // }
 // Console.WriteLine($"Массив: [ {string.Join("; ", array)}");
 
-//  Task 3. The program provides the mulpiplication of two numbers in an array staying the fisrt and the last.
-
-int[] array = { 2, 4, 3, 6, 3, 5, 7, 3 };
-int[] result = new int[array.Length / 2];
-for (int i = 0, j = array.Length - 1; i < result.Length; i++, j--)
-{
-    result[i] = array[i] * array[j];
-}
-Console.WriteLine($"Массив: [ {string.Join("; ", result)} ]");
+// //  Task 3. The program provides the mulpiplication of two numbers in an array staying the fisrt and the last.
+// int[] array = { 2, 4, 3, 6, 3, 5, 7, 3 };
+// int[] result = new int[array.Length / 2];
+// for (int i = 0, j = array.Length - 1; i < result.Length; i++, j--)
+// {
+//     result[i] = array[i] * array[j];
+// }
+// Console.WriteLine($"Массив: [ {string.Join("; ", result)} ]");
