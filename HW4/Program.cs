@@ -1,46 +1,31 @@
 ﻿// // Task 1. Programme constantly asks to enter integer numbers thourhg console.
 // //  programme stops only if you input "q" or the sum of figuers in number is even
 
-string dataInput (string line) // метод ввода данных
-{
-    Console.Write ("Введите число: ");
-    line = Console.ReadLine();
-    return line;
-}
-int dataSum (string line)
-{
-    dataInput(string line);
-    int number = Convert.ToInt32(line);
-    int sum = 0;
-    while (number > 0 )
-    {
-        sum = sum + number % 10;
-        number = number / 10; 
-    }
-    return sum;
-}
+// int dataSum (string result) // метод суммы цифр числа
+// {
+//     // int number = Convert.ToInt32(dataInput); // альтернативный вариант трансформации в число
+//     int number = int.Parse(result);
+//     int sum = 0;
+//     while (number > 0 )
+//     {
+//         sum = sum + number % 10;
+//         number = number / 10; 
+//     }
+//     return sum;
+// }
 
-    // Вывод результата
+//     // Вывод результата
 
-while (true) // бесконечный цикл
-{
-    dataInput(line);
-    if (dataInput(line) == "q" || dataSum(line) % 2 == 0 )
-    {
-        Console.WriteLine("Выход из программы")
-        break;
-    }
-}
-
-
-// SumNumbers(number);
-
-
-    
-
-
-
-
+// while (true) // бесконечный цикл
+// {
+//     Console.Write ("Введите число: ");
+//     string line = Console.ReadLine();
+//     if (line == "q" || dataSum(line) % 2 == 0 )
+//     {
+//         Console.WriteLine("Выход из программы");
+//         break;
+//     }
+// }
 
 // // Task 2. Set an array with random thre-digit numbers and it counts amount ogf those are even
 
@@ -74,4 +59,17 @@ while (true) // бесконечный цикл
 // Console.WriteLine($"Результат:  {GetCount(res)}");
 
 
-// Task 3. Set an array where the numbers just change their place in an array so that the first is the last, etc.
+// // Task 3. Set an array where the numbers just change their place in an array so that the first is the last, etc.
+
+// int [] ChangePlace ( int [] array)
+// {
+//     int[] res = new int [array.Length];
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         res [i] = array[(array.Length-1) - i];
+//     }
+//     return res;
+// }
+// // Вывод результата
+// int [] numbers = {25, 1, 3, 5, 6, 7, 8, 98, 102};
+// Console.WriteLine($"Массив перевернут: [ {string.Join("; ", ChangePlace(numbers))} ]");
