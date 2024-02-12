@@ -1,30 +1,47 @@
 ﻿// // Task 1. Programme constantly asks to enter integer numbers thourhg console.
-// //  programme stops only if you input "q" or the sum of figuers in number is even
+// //  programme stops only if you input "q" or the sum of figures in number is even
 
 // int dataSum (string result) // метод суммы цифр числа
 // {
 //     // int number = Convert.ToInt32(dataInput); // альтернативный вариант трансформации в число
 //     int number = int.Parse(result);
 //     int sum = 0;
+//     if (int.TryParse(result, out number))
+//     {
 //     while (number > 0 )
 //     {
 //         sum = sum + number % 10;
 //         number = number / 10; 
 //     }
+//     }
 //     return sum;
 // }
-
 //     // Вывод результата
 
 // while (true) // бесконечный цикл
 // {
 //     Console.Write ("Введите число: ");
 //     string line = Console.ReadLine();
-//     if (line == "q" || dataSum(line) % 2 == 0 )
-//     {
+
+//     if (line == "q")
+//         {
 //         Console.WriteLine("Выход из программы");
 //         break;
+//         }
+//     if (int.TryParse (line, out int number))
+//     {
+        
+//         if (dataSum(line) % 2 == 0 )
+//         {
+//         Console.WriteLine("Выход из программы");
+//         break;
+//         }
 //     }
+//     else 
+//     {
+//         Console.WriteLine("Некорректный ввод. Введите число, либо q для выхода");
+//     }
+
 // }
 
 // // Task 2. Set an array with random thre-digit numbers and it counts amount ogf those are even
