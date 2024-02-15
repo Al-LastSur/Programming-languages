@@ -81,7 +81,7 @@ int [] CreateArray (int size)
 // {
 
 // }
-//  if (int.TryParse(text, out number)) // определяет что в строке только цифры а не букты
+//  if (int.TryParse(text, out number)) // определяет что в строке только цифры а не буквы
 
 int N = Convert.ToInt32(Console.ReadLine());
 int [] res = CreateArray(N);
