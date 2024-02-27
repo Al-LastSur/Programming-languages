@@ -87,26 +87,33 @@
     //     Console.WriteLine($"Ackermann({m}, {n}) = {Ackermann(m, n)}");
 
 // // Task 3. Use recursion. Create random array. Print all its elements starting from the end.
-// int[] CreateArray(int size, int[] array = null, int currentIndex = 0) // int[] array = null - to create new array only once
-// {
-//     if (array == null) // for not to create new array every time
-//     {
-//        array = new int [size]; 
-//     }
-//     if (currentIndex < size)
-//     {
-//         Random rnd = new Random();
-//         array[currentIndex] = rnd.Next(1000); // range of numbers in array
-//         return CreateArray(size, array, currentIndex + 1);
-//     }
-//     else
-//     {
-//         return array;
-//     }    
-// }
-// // output results
-// Console.Write("Введите размер массива: ");
-// int size = Convert.ToInt32(Console.ReadLine());
-// int [] array = CreateArray(size);
-// string ArrayAsString = string.Join (", ", array);
-// Console.WriteLine($"Созданный массив: {ArrayAsString}");
+int[] CreateArray(int size, int[] array = null, int currentIndex = 0) // int[] array = null - to create new array only once
+{
+    if (array == null) // for not to create new array every time
+    {
+       array = new int [size]; 
+    }
+    if (currentIndex < size)
+    {
+        Random rnd = new Random();
+        array[currentIndex] = rnd.Next(1000); // range of numbers in array
+        return CreateArray(size, array, currentIndex + 1);
+        // return array;
+    }
+    else
+    {
+        return array;
+    }    
+}
+int[] ReverseArray (int[] array)
+{
+    array = array.Reverse().ToArray();
+    return array;
+}
+// output results
+Console.Write("Введите размер массива: ");
+int size = Convert.ToInt32(Console.ReadLine());
+int [] array = CreateArray(size);
+string ArrayAsString = string.Join (", ", array);
+Console.WriteLine($"Созданный массив: {ArrayAsString}");
+Console.WriteLine($"Перевернутый массив: {string.Join(", ", ReverseArray(array))}");
